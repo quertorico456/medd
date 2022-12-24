@@ -1,0 +1,56 @@
+*{box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+.container{
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+   }
+.header{
+    position: relative;
+    display: flex;
+    flex-direction: column; /* выстраивание в колонну */
+    justify-content: center; /*выравнивание по центру по оси Y  (при значении flex-direction:row X)*/
+    align-items:center; /*выравнивание по X (при значении flex-direction:row Y)*/
+
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+    background-image: url(./images/header/header-bg.jpg);
+    
+    background-size: cover; /*растягивает картинку*/
+    background-position: center;
+}
+.header-title{
+    margin: 0;
+    margin-bottom: 15px;
+    font-weight:700px;
+    font-size: 56px;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+    color:#F6B267;
+}
+.header-subtitle{
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 40%;
+    text-align: center;
+    color:#F6B267;
+    text-transform: uppercase; /*Делает все капсом(выбор регистра)*/
+}
+.header-arrow {
+    
+    width: 83px;
+    height: 99px;
+    
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%,0); /*делает чтобы картинка была ровно по середине. Типа-50% отступает налево и компенсирует свой размер*/
+
+}
+
